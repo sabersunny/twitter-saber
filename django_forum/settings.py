@@ -131,6 +131,7 @@ cloudinary.config(
     cloud_name="dj6bt46ar",
     api_key="482644941478895",
     api_secret="P59cUQUPZohjRtasaz0R3gL0w-s",
+    secure = True,
 )
 
 # Default primary key field type
