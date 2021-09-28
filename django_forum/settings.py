@@ -17,6 +17,7 @@ import cloudinary.api
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -68,9 +69,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'libraries': {
-                'util_tags': 'templatetags.util_tags',
-            },
         },
     },
 ]
@@ -125,13 +123,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR /'static',
+    BASE_DIR / 'static',
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 cloudinary.config(
     cloud_name="dj6bt46ar",
@@ -139,6 +138,8 @@ cloudinary.config(
     api_secret="P59cUQUPZohjRtasaz0R3gL0w-s",
     secure = True,
 )
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
