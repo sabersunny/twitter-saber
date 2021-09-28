@@ -19,7 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -29,7 +28,7 @@ SECRET_KEY = 'django-insecure-_2#er=+_-0zxnd$m-pw*$t(4^k)!x=)pco)7bsra6*_u$)s90(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [ "twitterclonesajid.herokuapp.com" , 'localhost']
 
 
 # Application definition
@@ -82,14 +81,8 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 
 DATABASES = {
     'default' : {
-        'ENGINE': 'django.db.backends.sqlite3',
+       'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5a35mamilkuta',
-        'USER': 'kbviewbqnkeahk',
-        'HOST': 'ec2-18-235-45-217.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'PASSWORD': '5f5393d644234d26ebde98e92e58f4f79a0dc83eefe1ac67bf28dd9826737139',
     }
 }
 
@@ -131,7 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 
@@ -146,8 +138,6 @@ cloudinary.config(
     api_secret="P59cUQUPZohjRtasaz0R3gL0w-s",
     secure = True,
 )
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
