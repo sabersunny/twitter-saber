@@ -164,6 +164,15 @@ body {
   width: 370px;
 }
 
+.like-button {
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  width: 34px;
+  height: 32;
+  color: red;
+}
+
 @media screen and (min-width: 400px) {
   #upload-file {
     color: #1da1f2;
