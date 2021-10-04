@@ -160,8 +160,6 @@ body {
   border-radius: 10px;
   border: 1px solid #1da1f2;
   margin-bottom: 10px;
-  height: 370px;
-  width: 370px;
 }
 
 .like-button {
@@ -185,7 +183,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  #pi {
+  .posts #pi {
     width: 200px;
     height: 200px;
   }
