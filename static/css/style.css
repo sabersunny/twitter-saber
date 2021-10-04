@@ -173,13 +173,20 @@ body {
   color: #1da1f2;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 450px) {
   #upload-file {
     color: #1da1f2;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .posts li .name_body .name {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .post-border {
+    width: 200px;
+    height: 200px;
   }
 }
