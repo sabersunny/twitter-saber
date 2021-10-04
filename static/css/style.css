@@ -156,7 +156,7 @@ body {
   color: gray;
 }
 
-.posts img.post-border {
+.posts .post-border img {
   border-radius: 10px;
   border: 1px solid #1da1f2;
   margin-bottom: 10px;
@@ -185,7 +185,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .post-border {
+  .posts .post-border img {
     width: 200px;
     height: 200px;
   }
