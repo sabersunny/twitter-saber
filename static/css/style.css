@@ -156,7 +156,7 @@ body {
   color: gray;
 }
 
-.post-border {
+.posts img.post-border {
   border-radius: 10px;
   border: 1px solid #1da1f2;
   margin-bottom: 10px;
