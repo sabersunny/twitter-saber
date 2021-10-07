@@ -49,12 +49,7 @@
             <div class="datetime">{{ post.created_at }}</div>
             <p>{{ post.body }}</p>
             {% if post.image.url %}
-            <img
-              class="post-border"
-              id="pi"
-              src="{{ post.image.url }}"
-              style="width: 370px; height: 370px"
-            />
+            <img class="post-border" id="pi" src="{{ post.image.url }}" />
             {% endif %}
             <form
               id="likes-form"
