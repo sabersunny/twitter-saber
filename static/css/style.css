@@ -190,3 +190,9 @@ body {
     height: 200px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .post_form input {
+    width: 87%;
+  }
+}
