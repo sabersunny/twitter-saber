@@ -1,0 +1,198 @@
+/* **************
+post
+*****************/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+#nav {
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  height: 7%;
+  border: 1px solid #1da1f2;
+}
+
+#tw {
+  border-radius: 15px;
+  width: 40px;
+  display: flex;
+  padding: 15%;
+}
+
+.main .head h1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 0px;
+  margin-left: 3%;
+  color: #1da1f2;
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  border-left: 1px solid #1da1f2;
+  border-right: 1px solid #1da1f2;
+}
+
+.content .post_form .My-image {
+  width: 130px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.content .post_form .My-image img {
+  width: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.content .post_form {
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid #1da1f2;
+  box-sizing: border-box;
+}
+
+.post_form input {
+  width: 87%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.post_form textarea {
+  width: 87%;
+  height: 85px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#upload-file {
+  color: #1da1f2;
+  overflow: hidden;
+}
+
+#tweet {
+  border-radius: 20px;
+  background-color: #1da1f2;
+  width: 80px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.divider {
+  background-color: #ecf1f5;
+  height: 12px;
+  border-bottom: 1px solid #1da1f2;
+}
+
+.posts ul {
+  padding: 0;
+}
+
+.posts li {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+  list-style: none;
+  position: relative;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li .logo {
+  flex-basis: 15%;
+}
+
+.posts li .logo img {
+  width: 60%;
+}
+
+.posts li .name_body {
+  flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+}
+
+#pi {
+  border-radius: 10px;
+  border: 1px solid #1da1f2;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.like-button {
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  width: 34px;
+  height: 32;
+  color: #1da1f2;
+}
+
+@media screen and (max-width: 450px) {
+  #upload-file {
+    color: #1da1f2;
+  }
+}
+@media screen and (max-width: 450px) {
+  .posts li .name_body .name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #pi {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .post_form input {
+    width: 87%;
+  }
+}
