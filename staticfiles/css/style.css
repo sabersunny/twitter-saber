@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   display: block;
   margin: 0;
-  background-color: #ccc;
+  background-color: whitesmoke;
 }
 
 #nav {
@@ -156,21 +156,43 @@ body {
   color: gray;
 }
 
-.post-border {
+#pi {
   border-radius: 10px;
   border: 1px solid #1da1f2;
   margin-bottom: 10px;
-  height: 370px;
-  width: 370px;
+  width: 400px;
+  height: 400px;
 }
 
-@media screen and (min-width: 400px) {
+.like-button {
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  width: 34px;
+  height: 32;
+  color: #1da1f2;
+}
+
+@media screen and (max-width: 450px) {
   #upload-file {
     color: #1da1f2;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .posts li .name_body .name {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #pi {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .post_form input {
+    width: 87%;
   }
 }
