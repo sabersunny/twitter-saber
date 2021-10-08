@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': 'ec2-18-235-45-217.compute-1.amazonaws.com',
         'PORT': 5432,
         'PASSWORD': '5f5393d644234d26ebde98e92e58f4f79a0dc83eefe1ac67bf28dd9826737139',
-        
+        'URL':'postgres://kbviewbqnkeahk:5f5393d644234d26ebde98e92e58f4f79a0dc83eefe1ac67bf28dd9826737139@ec2-18-235-45-217.compute-1.amazonaws.com:5432/d5a35mamilkuta'
     }
 }
 
