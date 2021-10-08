@@ -15,7 +15,7 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_2#er=+_-0zxnd$m-pw*$t(4^k)!x=)pco)7bsra6*_u$)s90(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ "twitterclonesajid.herokuapp.com" , 'localhost']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': 'ec2-18-235-45-217.compute-1.amazonaws.com',
         'PORT': 5432,
         'PASSWORD': '5f5393d644234d26ebde98e92e58f4f79a0dc83eefe1ac67bf28dd9826737139',
-        'URL':'postgres://kbviewbqnkeahk:5f5393d644234d26ebde98e92e58f4f79a0dc83eefe1ac67bf28dd9826737139@ec2-18-235-45-217.compute-1.amazonaws.com:5432/d5a35mamilkuta'
+        
     }
 }
 
@@ -129,16 +129,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
+
 
 
 cloudinary.config(
@@ -152,6 +150,6 @@ cloudinary.config(
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
